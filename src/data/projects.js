@@ -200,7 +200,7 @@ const PROJECTS = [
     link: "https://cothirtysix.com/collections/bundles/products/mock-neck-bundle",
     caseStudy: {
       client: "Co.Thirty Six",
-      role: "Shopify Theme Development",
+      role: "Shopify Theme Development 1",
       timeline: "2 weeks",
       stack: ["Shopify Liquid", "JavaScript", "CSS"],
       summary:
