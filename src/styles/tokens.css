@@ -1,0 +1,46 @@
+/*
+ * Design tokens. The accent color is the only thing that changes between
+ * themes; everything else (surfaces, text, borders) stays constant, which
+ * is what keeps the terminal aesthetic consistent across all four themes.
+ * The theme switcher (scripts/theme-switcher.js) only ever toggles the
+ * `data-theme` attribute on <html> — it never touches these values.
+ */
+
+:root {
+  --surface-0: #0a0e12; /* page background */
+  --surface-1: #0d1319; /* panel background (terminal window, cards) */
+  --surface-2: #0a0f14; /* nested panel background (project cards) */
+  --border: #1c2530;
+
+  --text-primary: #eef4f1;
+  --text-secondary: #9fb0aa;
+  --text-muted: #5c6b66;
+  --text-faint: #83938d;
+
+  --accent: oklch(0.75 0.19 150); /* default: terminal green, overridden below */
+
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --shell-radius: 6px;
+  --card-radius: 4px;
+  --content-width: 1200px;
+}
+
+/* Keep these oklch values in sync with `previewColor` in src/data/themes.js
+   — the swatch buttons render their own preview color inline since CSS
+   can't hand a variable back to server-rendered HTML. */
+:root[data-theme='green'] {
+  --accent: oklch(0.75 0.19 150);
+}
+
+:root[data-theme='cyan'] {
+  --accent: oklch(0.75 0.19 200);
+}
+
+:root[data-theme='amber'] {
+  --accent: oklch(0.75 0.19 70);
+}
+
+:root[data-theme='magenta'] {
+  --accent: oklch(0.75 0.19 340);
+}

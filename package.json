@@ -1,0 +1,26 @@
+{
+  "name": "abrar-anwar-portfolio",
+  "version": "1.0.0",
+  "description": "Abrar Anwar - Full-Stack Shopify Developer",
+  "main": "build/build.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "build": "node build/build.js",
+    "serve": "npm run build && npx --yes serve dist",
+    "deploy": "npm run build && gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrar-anwar/portfolio.git"
+  },
+  "author": "Abrar Anwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abrar-anwar/portfolio/issues"
+  },
+  "homepage": "https://abrar-anwar.github.io/portfolio"
+}

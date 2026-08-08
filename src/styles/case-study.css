@@ -1,0 +1,157 @@
+/* Styles specific to /case-studies/*.html pages. */
+
+.cs-breadcrumb {
+  padding: 24px 0;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.cs-breadcrumb a {
+  color: var(--accent);
+}
+
+.cs-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.cs-hero {
+  padding: 20px 0 50px 0;
+}
+
+.cs-eyebrow {
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.cs-title {
+  font-size: 36px;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.cs-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+  margin-top: 24px;
+}
+
+.cs-meta-item dt {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.cs-meta-item dd {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--text-primary);
+}
+
+.cs-thumb {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  filter: grayscale(0.15) contrast(1.05);
+  margin-top: 30px;
+}
+
+/* Multiple images (caseStudy.gallery with 2+ entries) lay out as a fixed
+   2-column grid — every tile is cropped to the same aspect ratio via
+   object-fit, so screenshots of inconsistent source dimensions still
+   read as the same size on screen. When the gallery has an odd count
+   (3, 5, ...), the last image is the odd-numbered last child, so it
+   spans the full row instead of leaving an awkward single half-empty
+   slot. */
+.cs-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.cs-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  filter: grayscale(0.15) contrast(1.05);
+}
+
+.cs-gallery img:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 560px) {
+  .cs-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-gallery img:last-child:nth-child(odd) {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.cs-section {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+
+.cs-section-label {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.cs-section p {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  max-width: 760px;
+}
+
+.cs-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cs-stack-item {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.cs-stack-item::before {
+  content: '> ';
+  color: var(--text-muted);
+}
+
+.cs-footer-nav {
+  padding: 40px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 640px) {
+  .cs-title {
+    font-size: 26px;
+  }
+}
