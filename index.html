@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Developer | Custom Theme Development</title>
+  <meta name="description" content="Abrar Anwar - Full Stack Shopify Developer | NodeJS | ReactJS ">
+  <meta name="author" content="Abrar Anwar">
+  <meta property="og:title" content="Shopify Developer | Custom Theme Development">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Abrar Anwar - Full Stack Shopify Developer | NodeJS | ReactJS ">
+  <meta property="og:url" content="https://abrar-anwar.github.io/portfolio/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shopify Developer | Custom Theme Development">
+  <meta name="twitter:description" content="Abrar Anwar - Full Stack Shopify Developer | NodeJS | ReactJS ">
+
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/case-study.css">
+
+  <script>
+    /* Applies the stored theme before first paint to avoid a flash of the
+       default accent color. Kept inline + tiny on purpose. */
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme');
+        var known = ["green","cyan","amber","magenta"];
+        if (stored && known.indexOf(stored) !== -1) {
+          document.documentElement.setAttribute('data-theme', stored);
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <section class="section">
+    <div class="container">
+      <div class="hero-greeting">
+        <div class="hero-prompt">root@abrar:~$ whoami<span class="hero-cursor">_</span></div>
+        <h1 class="hero-heading">Hi, I&#39;m Abrar, a Freelance Developer.</h1>
+      </div>
+
+      <div class="terminal-window">
+        <canvas class="hero-network" aria-hidden="true"></canvas>
+
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <span class="terminal-dot terminal-dot--red"></span>
+            <span class="terminal-dot terminal-dot--yellow"></span>
+            <span class="terminal-dot terminal-dot--green"></span>
+          </div>
+          <div class="terminal-path">~/portfolio/index.html</div>
+          <ul class="terminal-nav">
+            <li>
+              <a
+                class="contact-btn"
+                title="Click me to send email to Abrar Anwar..."
+                href="mailto:abraranwar050@gmail.com?subject=Mail%20from%20Portfolio"
+              >[ CONTACT_ME ]</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="profile-column">
+          <div class="profile-photo">
+            <img src="images/profile-pic.jpg" alt="Photo of Abrar Anwar">
+          </div>
+          <div class="theme-switcher">
+            <div class="theme-switcher-label">THEME</div>
+            <div class="theme-swatches">
+            <button
+              type="button"
+              class="theme-swatch"
+              style="--swatch-color: oklch(0.75 0.19 150)"
+              data-theme-swatch="green"
+              aria-pressed="true"
+              aria-label="Green theme"
+              title="Green"
+            ></button>
+            <button
+              type="button"
+              class="theme-swatch"
+              style="--swatch-color: oklch(0.75 0.19 200)"
+              data-theme-swatch="cyan"
+              aria-pressed="false"
+              aria-label="Cyan theme"
+              title="Cyan"
+            ></button>
+            <button
+              type="button"
+              class="theme-swatch"
+              style="--swatch-color: oklch(0.75 0.19 70)"
+              data-theme-swatch="amber"
+              aria-pressed="false"
+              aria-label="Amber theme"
+              title="Amber"
+            ></button>
+            <button
+              type="button"
+              class="theme-swatch"
+              style="--swatch-color: oklch(0.75 0.19 340)"
+              data-theme-swatch="magenta"
+              aria-pressed="false"
+              aria-label="Magenta theme"
+              title="Magenta"
+            ></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-column">
+          <div class="services-panel">
+            <div class="services-panel-label">// services.log</div>
+            <p>As an experienced Shopify developer, I specialize in theme development and customization, along with backendsolutions tailored to each merchant&#39;s needs. With expertise in Liquid, Cart Transform Functions, and GraphQL-drivenapp development, I deliver exceptional storefronts built to perform across every layer of the store.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-body">
+          <h2 class="section-label">// 01. ABOUT_ME</h2>
+      <p>Currently, I work as a freelance Shopify developer, handling both theme development/customization and backendwork for merchants looking to build faster, more tailored stores. My work spans building custom storefronts withLiquid, developing Cart Transform Functions, and building app-level functionality using Shopify&#39;s GraphQL APIs.</p>
+      <p>My focus has been on theme development — building custom sections, Theme Customizer schema blocks, and Liquid</p>
+      <p>templating — while progressively moving into the more technical layers of the Shopify ecosystem: Functions,checkout customization, and app development using TypeScript and the Shopify CLI.</p>
+      <p>I&#39;m continuing to deepen my expertise in Shopify&#39;s backend capabilities, particularly around Cart TransformFunctions, checkout extensibility, and GraphQL-driven app development, as I move toward building more complete,end-to-end solutions for merchants rather than just storefront-level work.</p>
+        </div>
+
+        <div>
+          <h2 class="section-label">// 02. SKILLS</h2>
+          <p class="skills-intro">Full-stack developer with primary focus on Shopify and JavaScript ecosystem.</p>
+          <div class="skills-grid">
+        <ul>
+          <li>Shopify + Liquid (Ruby)</li>
+          <li>HTML/HTML5</li>
+          <li>CSS/CSS3/SASS/SCSS</li>
+          <li>Shopify Cart Transform Functions</li>
+          <li>Shopify GraphQL Admin API</li>
+          <li>Shopify CLI</li>
+          <li>Shopify App Development (custom apps)</li>
+          <li>Theme Customizer (Schema, Sections, Blocks)</li>
+        </ul>
+        <ul>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>NextJS/Gatsby</li>
+          <li>Node + Express (MERN Stack)</li>
+          <li>MongoDB</li>
+          <li>JSON, API</li>
+        </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-label text-center projects-heading">// 03. PROJECTS</h2>
+      <p class="projects-subheading text-center">I have worked on dozens of projects so I have picked only the latest for you.</p>
+
+      <div class="projects-shell">
+        <div class="project-grid">
+      <article class="project-card">
+        <img class="project-card-thumb" src="images/cofaneti.png" alt="Cofaneti website redesign storefront preview" loading="lazy">
+        <div class="project-card-body">
+          <h3 class="project-card-title">Cofaneti website redesign</h3>
+        <p class="project-card-intro">A complete Shopify storefront redesign for a Spanish upholstered-furniture brand, rebuiltwith a modern, multilingual, editorial visual identity.</p>
+          <div class="project-card-links">
+            <a class="project-card-link" target="_blank" rel="noopener" href="https://cofaneti.com">./visit &#8599;</a>
+            <a class="project-card-link" href="case-studies/cofaneti.html">./case-study</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <img class="project-card-thumb" src="images/finalpress.png" alt="FinalPress Website Redesign &amp; Conversion Optimization storefront preview" loading="lazy">
+        <div class="project-card-body">
+          <h3 class="project-card-title">FinalPress Website Redesign &amp; Conversion Optimization</h3>
+        <p class="project-card-intro">A multi-phase Shopify engagement covering full theme redesign, site-wide speed optimization,and custom order tracking for a coffee and tea maker brand.</p>
+          <div class="project-card-links">
+            <a class="project-card-link" target="_blank" rel="noopener" href="https://example.com">./visit &#8599;</a>
+            <a class="project-card-link" href="case-studies/finalpress.html">./case-study</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <img class="project-card-thumb" src="images/cofaneti-config.png" alt="Cofaneti Headboard Configurator storefront preview" loading="lazy">
+        <div class="project-card-body">
+          <h3 class="project-card-title">Cofaneti Headboard Configurator</h3>
+        <p class="project-card-intro">A custom Node.js pricing engine for made-to-order headboards, calculating dynamic prices acrosssix option groups with no third-party app.</p>
+          <div class="project-card-links">
+            <a class="project-card-link" target="_blank" rel="noopener" href="https://cofaneti.com/products/custom">./visit &#8599;</a>
+            <a class="project-card-link" href="case-studies/cofaneti-headboard-configurator.html">./case-study</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <img class="project-card-thumb" src="images/fyrehocky.png" alt="Fyrehocky custom team kit storefront preview" loading="lazy">
+        <div class="project-card-body">
+          <h3 class="project-card-title">Fyrehocky custom team kit</h3>
+        <p class="project-card-intro">A complete customizeble hocky team kit page where user can use color names logo for every player.</p>
+          <div class="project-card-links">
+            <a class="project-card-link" target="_blank" rel="noopener" href="https://fyrehockey.com/products/fh_pj01">./visit &#8599;</a>
+            <a class="project-card-link" href="case-studies/fyrehocky.html">./case-study</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <img class="project-card-thumb" src="images/co36.png" alt="Co.36 — Custom Bundle Builder storefront preview" loading="lazy">
+        <div class="project-card-body">
+          <h3 class="project-card-title">Co.36 — Custom Bundle Builder</h3>
+        <p class="project-card-intro">Custom-designed, multi-step bundle configurator for the product page: global size,per-item colors, and pack size selection across two distinct bundle types.</p>
+          <div class="project-card-links">
+            <a class="project-card-link" target="_blank" rel="noopener" href="https://cothirtysix.com/collections/bundles/products/mock-neck-bundle">./visit &#8599;</a>
+            <a class="project-card-link" href="case-studies/co36-bundle-builder.html">./case-study</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <img class="project-card-thumb" src="images/co36-carttransform.png" alt="Co.36 — Cart Transform &amp; Checkout Validation storefront preview" loading="lazy">
+        <div class="project-card-body">
+          <h3 class="project-card-title">Co.36 — Cart Transform &amp; Checkout Validation</h3>
+        <p class="project-card-intro">Native Shopify Functions that expand PDP-built bundles into individual SKUs atcheckout and block incomplete bundles from accelerated checkout paths.</p>
+          <div class="project-card-links">
+            <a class="project-card-link" target="_blank" rel="noopener" href="https://cothirtysix.com/collections/bundles/products/mock-neck-bundle">./visit &#8599;</a>
+            <a class="project-card-link" href="case-studies/co36-cart-transform-checkout-validation.html">./case-study</a>
+          </div>
+        </div>
+      </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="scripts/theme-switcher.js" defer></script>
+  <script src="scripts/hero-network.js" defer></script>
+</body>
+</html>

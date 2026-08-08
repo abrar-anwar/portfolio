@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cofaneti website redesign Case Study | Abrar Anwar</title>
+  <meta name="description" content="A fully custom configurator for Cofaneti&#39;s made-to-order headboards, supporting six major customization option groups — each with many possible values — where price shifts dynamically based on the exact combination a customer selects. Customers can build a bespoke headboard and purchase it directly, with no paid third-party app.">
+  <meta name="author" content="Abrar Anwar">
+  <meta property="og:title" content="Cofaneti website redesign Case Study | Abrar Anwar">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A fully custom configurator for Cofaneti&#39;s made-to-order headboards, supporting six major customization option groups — each with many possible values — where price shifts dynamically based on the exact combination a customer selects. Customers can build a bespoke headboard and purchase it directly, with no paid third-party app.">
+  <meta property="og:url" content="https://abrar-anwar.github.io/portfolio/case-studies/cofaneti-headboard-configurator.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cofaneti website redesign Case Study | Abrar Anwar">
+  <meta name="twitter:description" content="A fully custom configurator for Cofaneti&#39;s made-to-order headboards, supporting six major customization option groups — each with many possible values — where price shifts dynamically based on the exact combination a customer selects. Customers can build a bespoke headboard and purchase it directly, with no paid third-party app.">
+
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/case-study.css">
+
+  <script>
+    /* Applies the stored theme before first paint to avoid a flash of the
+       default accent color. Kept inline + tiny on purpose. */
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme');
+        var known = ["green","cyan","amber","magenta"];
+        if (stored && known.indexOf(stored) !== -1) {
+          document.documentElement.setAttribute('data-theme', stored);
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <section class="section">
+    <div class="container">
+      <nav class="cs-breadcrumb">
+        <a href="../index.html">&larr; back to portfolio</a>
+      </nav>
+
+      <div class="cs-hero">
+        <div class="cs-eyebrow">// case-study</div>
+        <h1 class="cs-title">Cofaneti website redesign</h1>
+
+        <dl class="cs-meta">
+          <div class="cs-meta-item">
+            <dt>Role</dt>
+            <dd>Shopify Theme Development</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Timeline</dt>
+            <dd>2 weeks</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Live site</dt>
+            <dd><a class="contact-btn" style="padding:4px 10px" target="_blank" rel="noopener" href="https://cofaneti.com/products/custom">./visit &#8599;</a></dd>
+          </div>
+        </dl>
+
+        <div class="cs-gallery">
+          <img src="../images/cofaneti-config.png" alt="Cofaneti website redesign preview">
+          <img src="../images/cofaneti-config2.png" alt="Cofaneti website redesign preview">
+          <img src="../images/cofaneti-config3.png" alt="Cofaneti website redesign preview">
+          <img src="../images/cofaneti-config4.png" alt="Cofaneti website redesign preview">
+        </div>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// overview</h2>
+        <p>A fully custom configurator for Cofaneti&#39;s made-to-order headboards, supporting six major customization option groups — each with many possible values — where price shifts dynamically based on the exact combination a customer selects. Customers can build a bespoke headboard and purchase it directly, with no paid third-party app.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// challenge</h2>
+        <p>With six option groups and dozens of values each, the number of possible combinations was far beyond what Shopify&#39;s native variant system could handle, and each unique combination needed an accurately calculated price before checkout. The client also wanted long-term control — the ability to add new options, values, or custom sizing themselves after launch, without needing a developer involved for every change.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// solution</h2>
+        <p>Built a custom Node.js backend to power the configurator&#39;s pricing engine: as a customer selects options, the server calculates the correct price on the fly and generates a new product variant with that exact combination and price, ready for purchase. Option groups and values are managed through Shopify metaobjects, so the client can add new options, values, or custom size overrides directly — turning a one-off configurator into a maintainable, self-service system.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// tech stack</h2>
+        <div class="cs-stack">
+          <span class="cs-stack-item">Shopify Liquid</span>
+          <span class="cs-stack-item">JavaScript</span>
+          <span class="cs-stack-item">CSS</span>
+          <span class="cs-stack-item">Node.js</span>
+        </div>
+      </div>
+
+      <div class="cs-footer-nav">
+        <a class="contact-btn" href="../index.html#projects">&larr; all projects</a>
+        <a class="contact-btn" href="mailto:abraranwar050@gmail.com?subject=Question%20about%20the%20Cofaneti%20website%20redesign%20project">[ CONTACT_ME ]</a>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/theme-switcher.js" defer></script>
+
+</body>
+</html>

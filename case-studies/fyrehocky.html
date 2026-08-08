@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fyrehocky Case Study | Abrar Anwar</title>
+  <meta name="description" content="Fyrehockey needed a fully custom product configurator for theirteam hockey jerseys — one that let customers choose colors, pick logoplacement, personalize names and numbers, and preview fonts before ordering,replacing the need for two separate paid Shopify apps.">
+  <meta name="author" content="Abrar Anwar">
+  <meta property="og:title" content="Fyrehocky Case Study | Abrar Anwar">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Fyrehockey needed a fully custom product configurator for theirteam hockey jerseys — one that let customers choose colors, pick logoplacement, personalize names and numbers, and preview fonts before ordering,replacing the need for two separate paid Shopify apps.">
+  <meta property="og:url" content="https://abrar-anwar.github.io/portfolio/case-studies/fyrehocky.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fyrehocky Case Study | Abrar Anwar">
+  <meta name="twitter:description" content="Fyrehockey needed a fully custom product configurator for theirteam hockey jerseys — one that let customers choose colors, pick logoplacement, personalize names and numbers, and preview fonts before ordering,replacing the need for two separate paid Shopify apps.">
+
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/case-study.css">
+
+  <script>
+    /* Applies the stored theme before first paint to avoid a flash of the
+       default accent color. Kept inline + tiny on purpose. */
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme');
+        var known = ["green","cyan","amber","magenta"];
+        if (stored && known.indexOf(stored) !== -1) {
+          document.documentElement.setAttribute('data-theme', stored);
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <section class="section">
+    <div class="container">
+      <nav class="cs-breadcrumb">
+        <a href="../index.html">&larr; back to portfolio</a>
+      </nav>
+
+      <div class="cs-hero">
+        <div class="cs-eyebrow">// case-study</div>
+        <h1 class="cs-title">Fyrehocky</h1>
+
+        <dl class="cs-meta">
+          <div class="cs-meta-item">
+            <dt>Role</dt>
+            <dd>Shopify Theme Development</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Timeline</dt>
+            <dd>2 weeks</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Live site</dt>
+            <dd><a class="contact-btn" style="padding:4px 10px" target="_blank" rel="noopener" href="https://fyrehockey.com/products/fh_pj01">./visit &#8599;</a></dd>
+          </div>
+        </dl>
+
+        <div class="cs-gallery">
+          <img src="../images/fyrehocky.png" alt="Fyrehocky preview">
+          <img src="../images/fyrehocky2.png" alt="Fyrehocky preview">
+        </div>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// overview</h2>
+        <p>Fyrehockey needed a fully custom product configurator for theirteam hockey jerseys — one that let customers choose colors, pick logoplacement, personalize names and numbers, and preview fonts before ordering,replacing the need for two separate paid Shopify apps.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// challenge</h2>
+        <p>The client&#39;s existing setup couldn&#39;t handle the complexity ofteam-sports customization: independent per-player name/number fields(not a comma-separated mess), toggleable logo placement (front, shoulder,back sponsor), color swatches that actually reflected the product images,and live font previews from their own custom TTF files. Off-the-shelfvariant/app solutions weren&#39;t built for this level of interdependent logic.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// solution</h2>
+        <p>Built a fully custom Liquid + JS product template with interlinked optionlogic — color swatches synced to real product images, toggleablelogo-placement fields, roster upload support, and individual name/numberinput cells instead of a single comma-separated field. Added a customfont-preview system using the client&#39;s own TTF files, rendering live uppercasesamples with numerals for each font. Later extended the same core template intothree additional variants (jersey, simplified product, pant) by reusing theunderlying logic while adjusting the option sets per product type, and fixed amobile Safari bug where uploaded logos were silently dropped before checkout.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// tech stack</h2>
+        <div class="cs-stack">
+          <span class="cs-stack-item">Shopify Liquid</span>
+          <span class="cs-stack-item">JavaScript</span>
+          <span class="cs-stack-item">CSS</span>
+        </div>
+      </div>
+
+      <div class="cs-footer-nav">
+        <a class="contact-btn" href="../index.html#projects">&larr; all projects</a>
+        <a class="contact-btn" href="mailto:abraranwar050@gmail.com?subject=Question%20about%20the%20Fyrehocky%20project">[ CONTACT_ME ]</a>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/theme-switcher.js" defer></script>
+
+</body>
+</html>

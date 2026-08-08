@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co.Thirty Six Case Study | Abrar Anwar</title>
+  <meta name="description" content="Co.Thirty Six needed a fully custom-designed bundle-building experience on the product page, letting customers assemble multi-item packs entirely on their own terms. The flow was custom designed end-to-end: customers choose a global size first, then pick colors for each item in the pack through a custom color-swatch UI, then select the pack size itself via a custom pack-size selector — with two distinct, custom-designed bundle types supported: one that mixes different products together, and one built from multiple units of the same product.">
+  <meta name="author" content="Abrar Anwar">
+  <meta property="og:title" content="Co.Thirty Six Case Study | Abrar Anwar">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Co.Thirty Six needed a fully custom-designed bundle-building experience on the product page, letting customers assemble multi-item packs entirely on their own terms. The flow was custom designed end-to-end: customers choose a global size first, then pick colors for each item in the pack through a custom color-swatch UI, then select the pack size itself via a custom pack-size selector — with two distinct, custom-designed bundle types supported: one that mixes different products together, and one built from multiple units of the same product.">
+  <meta property="og:url" content="https://abrar-anwar.github.io/portfolio/case-studies/co36-bundle-builder.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Co.Thirty Six Case Study | Abrar Anwar">
+  <meta name="twitter:description" content="Co.Thirty Six needed a fully custom-designed bundle-building experience on the product page, letting customers assemble multi-item packs entirely on their own terms. The flow was custom designed end-to-end: customers choose a global size first, then pick colors for each item in the pack through a custom color-swatch UI, then select the pack size itself via a custom pack-size selector — with two distinct, custom-designed bundle types supported: one that mixes different products together, and one built from multiple units of the same product.">
+
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/case-study.css">
+
+  <script>
+    /* Applies the stored theme before first paint to avoid a flash of the
+       default accent color. Kept inline + tiny on purpose. */
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme');
+        var known = ["green","cyan","amber","magenta"];
+        if (stored && known.indexOf(stored) !== -1) {
+          document.documentElement.setAttribute('data-theme', stored);
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <section class="section">
+    <div class="container">
+      <nav class="cs-breadcrumb">
+        <a href="../index.html">&larr; back to portfolio</a>
+      </nav>
+
+      <div class="cs-hero">
+        <div class="cs-eyebrow">// case-study</div>
+        <h1 class="cs-title">Co.Thirty Six</h1>
+
+        <dl class="cs-meta">
+          <div class="cs-meta-item">
+            <dt>Role</dt>
+            <dd>Shopify Theme Development 1</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Timeline</dt>
+            <dd>2 weeks</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Live site</dt>
+            <dd><a class="contact-btn" style="padding:4px 10px" target="_blank" rel="noopener" href="https://cothirtysix.com/collections/bundles/products/mock-neck-bundle">./visit &#8599;</a></dd>
+          </div>
+        </dl>
+
+        <img class="cs-thumb" src="../images/co36.png" alt="Co.Thirty Six preview">
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// overview</h2>
+        <p>Co.Thirty Six needed a fully custom-designed bundle-building experience on the product page, letting customers assemble multi-item packs entirely on their own terms. The flow was custom designed end-to-end: customers choose a global size first, then pick colors for each item in the pack through a custom color-swatch UI, then select the pack size itself via a custom pack-size selector — with two distinct, custom-designed bundle types supported: one that mixes different products together, and one built from multiple units of the same product.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// challenge</h2>
+        <p>Native Shopify variants and options aren&#39;t built for multi-step, interdependent bundle logic. The client needed a single global size selection to apply across an entire bundle, followed by per-item color choices that update dynamically based on the selected pack size, and the whole flow needed to support two structurally different bundle types — mixed-product bundles and same-product multi-packs — within one coherent PDP experience, without relying on a paid bundle app.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// solution</h2>
+        <p>Built a fully custom product-page configurator in Liquid and JavaScript that walks the customer through global size selection, then per-item color pickers scoped to the chosen pack size, then final pack-size confirmation. Implemented two bundle variants on the same underlying system: a &#39;different products&#39; bundle type and a &#39;same product, multiple units&#39; bundle type, each reusing the core selection logic while branching on how items are presented and validated. Each finished selection is packaged for handoff to checkout, where a separate Cart Transform Function and Checkout Validation Function (a related but distinct project) expand and validate the bundle before purchase.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// tech stack</h2>
+        <div class="cs-stack">
+          <span class="cs-stack-item">Shopify Liquid</span>
+          <span class="cs-stack-item">JavaScript</span>
+          <span class="cs-stack-item">CSS</span>
+        </div>
+      </div>
+
+      <div class="cs-footer-nav">
+        <a class="contact-btn" href="../index.html#projects">&larr; all projects</a>
+        <a class="contact-btn" href="mailto:abraranwar050@gmail.com?subject=Question%20about%20the%20Co.Thirty%20Six%20project">[ CONTACT_ME ]</a>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/theme-switcher.js" defer></script>
+
+</body>
+</html>

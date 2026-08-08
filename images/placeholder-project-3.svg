@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#0a0f14"/>
+  <rect x="0.5" y="0.5" width="639" height="399" fill="none" stroke="#1c2530"/>
+  <g fill="none" stroke="#16311f" stroke-width="1">
+    <path d="M0 80H640M0 160H640M0 240H640M0 320H640"/>
+  </g>
+  <text x="320" y="190" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20" fill="#5c6b66" text-anchor="middle">[ PROJECT_THUMBNAIL ]</text>
+  <text x="320" y="220" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#3a4a44" text-anchor="middle">replace: src/assets/images/placeholder-project-3.svg</text>
+</svg>

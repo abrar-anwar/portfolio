@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinalPress Website Redesign &amp; Conversion Optimization Case Study | Abrar Anwar</title>
+  <meta name="description" content="FinalPress, a coffee and tea maker brand, needed an ongoing partner to take their Shopify store from a slow, generic setup to a fast, conversion-focused storefront. The engagement spanned a full theme redesign and re-platforming, site-wide speed optimization, a custom order-tracking system, and checkout and cart flow improvements built without relying on paid third-party apps.">
+  <meta name="author" content="Abrar Anwar">
+  <meta property="og:title" content="FinalPress Website Redesign &amp; Conversion Optimization Case Study | Abrar Anwar">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="FinalPress, a coffee and tea maker brand, needed an ongoing partner to take their Shopify store from a slow, generic setup to a fast, conversion-focused storefront. The engagement spanned a full theme redesign and re-platforming, site-wide speed optimization, a custom order-tracking system, and checkout and cart flow improvements built without relying on paid third-party apps.">
+  <meta property="og:url" content="https://abrar-anwar.github.io/portfolio/case-studies/finalpress.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FinalPress Website Redesign &amp; Conversion Optimization Case Study | Abrar Anwar">
+  <meta name="twitter:description" content="FinalPress, a coffee and tea maker brand, needed an ongoing partner to take their Shopify store from a slow, generic setup to a fast, conversion-focused storefront. The engagement spanned a full theme redesign and re-platforming, site-wide speed optimization, a custom order-tracking system, and checkout and cart flow improvements built without relying on paid third-party apps.">
+
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/case-study.css">
+
+  <script>
+    /* Applies the stored theme before first paint to avoid a flash of the
+       default accent color. Kept inline + tiny on purpose. */
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme');
+        var known = ["green","cyan","amber","magenta"];
+        if (stored && known.indexOf(stored) !== -1) {
+          document.documentElement.setAttribute('data-theme', stored);
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <section class="section">
+    <div class="container">
+      <nav class="cs-breadcrumb">
+        <a href="../index.html">&larr; back to portfolio</a>
+      </nav>
+
+      <div class="cs-hero">
+        <div class="cs-eyebrow">// case-study</div>
+        <h1 class="cs-title">FinalPress Website Redesign &amp; Conversion Optimization</h1>
+
+        <dl class="cs-meta">
+          <div class="cs-meta-item">
+            <dt>Role</dt>
+            <dd>Shopify Theme Development</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Timeline</dt>
+            <dd>6 weeks</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Live site</dt>
+            <dd><a class="contact-btn" style="padding:4px 10px" target="_blank" rel="noopener" href="https://example.com">./visit &#8599;</a></dd>
+          </div>
+        </dl>
+
+        <div class="cs-gallery">
+          <img src="../images/finalpress.png" alt="FinalPress Website Redesign &amp; Conversion Optimization preview">
+          <img src="../images/finalpress2.png" alt="FinalPress Website Redesign &amp; Conversion Optimization preview">
+        </div>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// overview</h2>
+        <p>FinalPress, a coffee and tea maker brand, needed an ongoing partner to take their Shopify store from a slow, generic setup to a fast, conversion-focused storefront. The engagement spanned a full theme redesign and re-platforming, site-wide speed optimization, a custom order-tracking system, and checkout and cart flow improvements built without relying on paid third-party apps.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// challenge</h2>
+        <p>The store&#39;s original theme was slow — page speed scores as low as 30 on mobile — which was hurting both user experience and conversions. The client also needed several pieces of core functionality that don&#39;t exist natively in Shopify: a way for customers to look up their own order tracking without an expensive monthly app, a streamlined Buy Now flow that skipped the cart page entirely, and checkout-page upsells and order bumps, all while staying within the constraints of what Shopify (and later Shopify Plus) actually allows to be customized.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// solution</h2>
+        <p>Built a custom order-tracking page that matches a customer&#39;s email or order number against a Google Sheet via the Sheets API, giving the client a free, self-managed alternative to paid tracking apps — later hardened for privacy by switching the lookup from email to order number after a customer flagged exposed data. Streamlined the purchase flow so Buy Now routes straight to the product page and Add to Cart bypasses the cart page and goes directly to checkout, with the cart still reachable via icon. Carried out a full theme redesign and re-platform in stages, matching new reference designs (from brands like Aeropress) across desktop and mobile, then repeatedly profiled and optimized the site, taking mobile speed from the 30s into the 70s and desktop from the 50s into the 90s. Once the client moved to Shopify Plus, used checkout extensibility to add an in-checkout order bump (&quot;add one more for $X&quot;) and an improved review section, and handled a domain migration with redirects to preserve existing Meta ad engagement.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// tech stack</h2>
+        <div class="cs-stack">
+          <span class="cs-stack-item">Shopify Liquid</span>
+          <span class="cs-stack-item">JavaScript</span>
+          <span class="cs-stack-item">CSS</span>
+        </div>
+      </div>
+
+      <div class="cs-footer-nav">
+        <a class="contact-btn" href="../index.html#projects">&larr; all projects</a>
+        <a class="contact-btn" href="mailto:abraranwar050@gmail.com?subject=Question%20about%20the%20FinalPress%20Website%20Redesign%20%26%20Conversion%20Optimization%20project">[ CONTACT_ME ]</a>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/theme-switcher.js" defer></script>
+
+</body>
+</html>

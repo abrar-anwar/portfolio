@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cofaneti website redesign Case Study | Abrar Anwar</title>
+  <meta name="description" content="Cofaneti, a Spanish upholstered-furniture brand, needed a complete redesign of their Shopify store — moving away from a dated, generic layout toward a modern, sleek aesthetic that matched the quality of their product. Working from the client&#39;s reference material and design direction, the goal was to rebuild the storefront experience from the ground up: homepage, collection pages, product pages, and the overall visual language, so the site felt as considered and premium as the furniture itself. The store also needed to support multiple languages to serve the brand&#39;s international customer base, adding a layer of complexity across every template. This redesign also laid the foundation for a separate, more technical build — a custom made-to-order headboard configurator — meaning the new theme needed to be flexible enough to support that heavier functionality down the line.">
+  <meta name="author" content="Abrar Anwar">
+  <meta property="og:title" content="Cofaneti website redesign Case Study | Abrar Anwar">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Cofaneti, a Spanish upholstered-furniture brand, needed a complete redesign of their Shopify store — moving away from a dated, generic layout toward a modern, sleek aesthetic that matched the quality of their product. Working from the client&#39;s reference material and design direction, the goal was to rebuild the storefront experience from the ground up: homepage, collection pages, product pages, and the overall visual language, so the site felt as considered and premium as the furniture itself. The store also needed to support multiple languages to serve the brand&#39;s international customer base, adding a layer of complexity across every template. This redesign also laid the foundation for a separate, more technical build — a custom made-to-order headboard configurator — meaning the new theme needed to be flexible enough to support that heavier functionality down the line.">
+  <meta property="og:url" content="https://abrar-anwar.github.io/portfolio/case-studies/cofaneti.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cofaneti website redesign Case Study | Abrar Anwar">
+  <meta name="twitter:description" content="Cofaneti, a Spanish upholstered-furniture brand, needed a complete redesign of their Shopify store — moving away from a dated, generic layout toward a modern, sleek aesthetic that matched the quality of their product. Working from the client&#39;s reference material and design direction, the goal was to rebuild the storefront experience from the ground up: homepage, collection pages, product pages, and the overall visual language, so the site felt as considered and premium as the furniture itself. The store also needed to support multiple languages to serve the brand&#39;s international customer base, adding a layer of complexity across every template. This redesign also laid the foundation for a separate, more technical build — a custom made-to-order headboard configurator — meaning the new theme needed to be flexible enough to support that heavier functionality down the line.">
+
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/case-study.css">
+
+  <script>
+    /* Applies the stored theme before first paint to avoid a flash of the
+       default accent color. Kept inline + tiny on purpose. */
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme');
+        var known = ["green","cyan","amber","magenta"];
+        if (stored && known.indexOf(stored) !== -1) {
+          document.documentElement.setAttribute('data-theme', stored);
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <section class="section">
+    <div class="container">
+      <nav class="cs-breadcrumb">
+        <a href="../index.html">&larr; back to portfolio</a>
+      </nav>
+
+      <div class="cs-hero">
+        <div class="cs-eyebrow">// case-study</div>
+        <h1 class="cs-title">Cofaneti website redesign</h1>
+
+        <dl class="cs-meta">
+          <div class="cs-meta-item">
+            <dt>Role</dt>
+            <dd>Shopify Theme Development</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Timeline</dt>
+            <dd>2 weeks</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Live site</dt>
+            <dd><a class="contact-btn" style="padding:4px 10px" target="_blank" rel="noopener" href="https://cofaneti.com">./visit &#8599;</a></dd>
+          </div>
+        </dl>
+
+        <div class="cs-gallery">
+          <img src="../images/cofaneti.png" alt="Cofaneti website redesign preview">
+          <img src="../images/cofaneti2.png" alt="Cofaneti website redesign preview">
+        </div>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// overview</h2>
+        <p>Cofaneti, a Spanish upholstered-furniture brand, needed a complete redesign of their Shopify store — moving away from a dated, generic layout toward a modern, sleek aesthetic that matched the quality of their product. Working from the client&#39;s reference material and design direction, the goal was to rebuild the storefront experience from the ground up: homepage, collection pages, product pages, and the overall visual language, so the site felt as considered and premium as the furniture itself. The store also needed to support multiple languages to serve the brand&#39;s international customer base, adding a layer of complexity across every template. This redesign also laid the foundation for a separate, more technical build — a custom made-to-order headboard configurator — meaning the new theme needed to be flexible enough to support that heavier functionality down the line.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// challenge</h2>
+        <p>The existing store didn&#39;t reflect the brand&#39;s positioning. Visually, it read as an off-the-shelf theme rather than a considered brand experience, which undercut trust for a premium, made-to-order furniture brand. The client had a strong point of view — reference imagery, a clear aesthetic direction, specific layout preferences — but no single component existed yet to unify it into a working Shopify theme. On top of the visual rebuild, the site needed to work cleanly across multiple languages, meaning every custom section, layout, and piece of dynamic content had to be built with translation and locale-switching in mind from the start, not bolted on afterward. The redesign also needed to balance that custom, sleek visual identity with practical Shopify constraints: performance, maintainability, and compatibility with the more complex configurator functionality being built alongside it.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// solution</h2>
+        <p>Rebuilt the storefront from the ground up with a modern, minimal visual language matched closely to the client&#39;s references — custom section layouts, typography, and spacing designed to feel premium and editorial rather than templated. Key pages (home, collections, product) were redesigned individually to support the brand&#39;s product photography and messaging, while keeping the underlying theme structure clean and flexible enough to integrate the custom headboard configurator as a distinct, more technical layer on top. The theme was built with Shopify&#39;s native multilanguage support throughout, so every custom section and piece of content translates correctly and customers can browse and shop in their preferred language. The result is a cohesive, multilingual site that reads as a custom-built brand experience end to end, not a stock theme with a new coat of paint.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// tech stack</h2>
+        <div class="cs-stack">
+          <span class="cs-stack-item">Shopify Liquid</span>
+          <span class="cs-stack-item">JavaScript</span>
+          <span class="cs-stack-item">CSS</span>
+        </div>
+      </div>
+
+      <div class="cs-footer-nav">
+        <a class="contact-btn" href="../index.html#projects">&larr; all projects</a>
+        <a class="contact-btn" href="mailto:abraranwar050@gmail.com?subject=Question%20about%20the%20Cofaneti%20website%20redesign%20project">[ CONTACT_ME ]</a>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/theme-switcher.js" defer></script>
+
+</body>
+</html>

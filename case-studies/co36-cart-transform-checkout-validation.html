@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co.36 — Cart Transform &amp; Checkout Validation Case Study | Abrar Anwar</title>
+  <meta name="description" content="To get PDP-built bundles safely through Shopify&#39;s checkout, Co.Thirty Six needed the bundle expanded into its individual SKUs at checkout time, plus a safety net to catch bundles that reach checkout incomplete or corrupted — all handled with native Shopify Functions rather than a third-party app.">
+  <meta name="author" content="Abrar Anwar">
+  <meta property="og:title" content="Co.36 — Cart Transform &amp; Checkout Validation Case Study | Abrar Anwar">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="To get PDP-built bundles safely through Shopify&#39;s checkout, Co.Thirty Six needed the bundle expanded into its individual SKUs at checkout time, plus a safety net to catch bundles that reach checkout incomplete or corrupted — all handled with native Shopify Functions rather than a third-party app.">
+  <meta property="og:url" content="https://abrar-anwar.github.io/portfolio/case-studies/co36-cart-transform-checkout-validation.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Co.36 — Cart Transform &amp; Checkout Validation Case Study | Abrar Anwar">
+  <meta name="twitter:description" content="To get PDP-built bundles safely through Shopify&#39;s checkout, Co.Thirty Six needed the bundle expanded into its individual SKUs at checkout time, plus a safety net to catch bundles that reach checkout incomplete or corrupted — all handled with native Shopify Functions rather than a third-party app.">
+
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/case-study.css">
+
+  <script>
+    /* Applies the stored theme before first paint to avoid a flash of the
+       default accent color. Kept inline + tiny on purpose. */
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme');
+        var known = ["green","cyan","amber","magenta"];
+        if (stored && known.indexOf(stored) !== -1) {
+          document.documentElement.setAttribute('data-theme', stored);
+        }
+      } catch (err) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <section class="section">
+    <div class="container">
+      <nav class="cs-breadcrumb">
+        <a href="../index.html">&larr; back to portfolio</a>
+      </nav>
+
+      <div class="cs-hero">
+        <div class="cs-eyebrow">// case-study</div>
+        <h1 class="cs-title">Co.36 — Cart Transform &amp; Checkout Validation</h1>
+
+        <dl class="cs-meta">
+          <div class="cs-meta-item">
+            <dt>Role</dt>
+            <dd>Shopify backend expert</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Timeline</dt>
+            <dd>2 weeks</dd>
+          </div>
+          <div class="cs-meta-item">
+            <dt>Live site</dt>
+            <dd><a class="contact-btn" style="padding:4px 10px" target="_blank" rel="noopener" href="https://cothirtysix.com/collections/bundles/products/mock-neck-bundle">./visit &#8599;</a></dd>
+          </div>
+        </dl>
+
+        <div class="cs-gallery">
+          <img src="../images/co36-carttransform.png" alt="Co.36 — Cart Transform &amp; Checkout Validation preview">
+          <img src="../images/co36-carttransform2.png" alt="Co.36 — Cart Transform &amp; Checkout Validation preview">
+        </div>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// overview</h2>
+        <p>To get PDP-built bundles safely through Shopify&#39;s checkout, Co.Thirty Six needed the bundle expanded into its individual SKUs at checkout time, plus a safety net to catch bundles that reach checkout incomplete or corrupted — all handled with native Shopify Functions rather than a third-party app.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// challenge</h2>
+        <p>A bundle selected on the product page needed to arrive at checkout as its individual, correctly priced SKUs rather than as a single opaque line item. The trickier problem was that accelerated checkout paths — specifically Shop Pay links used in Instagram ads — bypass the normal product-page JavaScript entirely, so bundle line items could reach checkout missing the data needed to expand them correctly, risking incorrect orders going through undetected.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// solution</h2>
+        <p>Built a Cart Transform Function that expands each bundle line item into its individual SKUs at checkout, using the pricing and item data captured by the PDP configurator so every unit in the bundle checks out at the correct price. The function is designed to safely no-op on normal, non-bundle cart items, so it never interferes with regular orders. To close a gap on accelerated checkout paths — specifically Shop Pay links used in Instagram ads, which bypass the standard product-page flow — added a Checkout Validation Function that detects when a bundle product reaches checkout without its required configuration data and blocks the order, showing the customer a clear error message directing them to re-add the item from the product page instead of letting a malformed order go through.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2 class="cs-section-label">// tech stack</h2>
+        <div class="cs-stack">
+          <span class="cs-stack-item">Node.js</span>
+          <span class="cs-stack-item">cart transform function</span>
+          <span class="cs-stack-item">checkout validation</span>
+        </div>
+      </div>
+
+      <div class="cs-footer-nav">
+        <a class="contact-btn" href="../index.html#projects">&larr; all projects</a>
+        <a class="contact-btn" href="mailto:abraranwar050@gmail.com?subject=Question%20about%20the%20Co.36%20%E2%80%94%20Cart%20Transform%20%26%20Checkout%20Validation%20project">[ CONTACT_ME ]</a>
+      </div>
+    </div>
+  </section>
+  <script src="../scripts/theme-switcher.js" defer></script>
+
+</body>
+</html>
