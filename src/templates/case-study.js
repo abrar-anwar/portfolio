@@ -104,7 +104,7 @@ ${renderStack(cs.stack)}
   return layout({
     title,
     description,
-    canonicalUrl: `${profile.seo.siteUrl}case-studies/${project.slug}.html`,
+    canonicalUrl: `${profile.seo.siteUrl}case-studies/${project.slug}`,
     author: profile.name,
     assetRoot,
     bodyHtml,

@@ -3,9 +3,13 @@
 const { escapeHtml } = require('../escape');
 const { projectCard } = require('./project-card');
 
-/** Path (relative to site root) of a project's case-study page, if any. */
+/**
+ * Path (relative to site root) of a project's case-study page, if any.
+ * Omits the .html extension — GitHub Pages serves foo.html at /foo, and
+ * the extensionless form makes for a cleaner URL.
+ */
 function caseStudyPath(project) {
-  return `case-studies/${project.slug}.html`;
+  return `case-studies/${project.slug}`;
 }
 
 function renderProjectsSection({ projects, intro, assetRoot = '' }) {
