@@ -50,7 +50,7 @@ function renderHero({ profile, themes, defaultTheme, assetRoot = '' }) {
 
         <div class="profile-column">
           <div class="profile-photo">
-            <img src="${assetRoot}images/profile-pic.jpg" alt="Photo of ${escapeHtml(profile.name)}">
+            <img src="${assetRoot}images/profile-pic.jpeg" alt="Photo of ${escapeHtml(profile.name)}">
           </div>
           <div class="theme-switcher">
             <div class="theme-switcher-label">THEME</div>
