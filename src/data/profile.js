@@ -9,7 +9,7 @@ module.exports = {
   name: "Abrar Anwar",
   role: "Freelance Developer",
   terminalPrompt: "root@abrar:~$ whoami",
-  heroHeading: "Hi, I'm Abrar, an experienced Shopify developer.",
+  heroHeading: "Hi, I'm Abrar, a Shopify developer.",
   contactEmail: "abraranwar050@gmail.com",
   contactSubject: "Mail from Portfolio",
 
